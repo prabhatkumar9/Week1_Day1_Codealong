@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample</title>
+    <style>
+        a,
+        strong {
+            color: orangered;
+        }
+
+        li a {
+            color: orange;
+        }
+
+        .container ol {
+            border: 5px solid blue;
+        }
+
+        .container>ol {
+            border: 5px solid red;
+        }
+
+        /* addjacent selector */
+        ol+p {
+            color: saddlebrown;
+        }
+
+        /* sibling selector */
+        ol~p {
+            color: seagreen;
+        }
+
+        /* pseudo selectors */
+        a:hover {
+            text-decoration: none;
+            color: skyblue;
+        }
+        .mom{
+            top: 400px;
+            position: relative;
+            
+        }
+        .me{
+            /* position:relative; */
+            position: absolute;
+            top: 50px;
+            left: 250px;
+            background-color: burlywood;
+            top: 0px;
+        }
+        .grand-mom{
+            padding: 50px;
+            background-color: darkblue;
+            position: relative;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grand-mom">
+        <p class="mom">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            <strong> Fuga nesciunt dolor delectus incidunt sint,
+                ut veniam</strong> natus hic asperiores necessitatibus illum blanditiis
+            unde similique magni? Adipisci cumque id eveniet, ea laborum obcaecati
+            aliquam expedita doloribus consequuntur totam.
+            Consectetur, ipsa, ad nulla aut assumenda vitae minima molestias ipsam
+            incidunt cum excepturi beatae perferendis iure dolores molestiae.
+            Distinctio facilis aliquam, doloribus omnis
+            asperiores in? <a href=""> Architecto voluptates</a> corrupti explicabo totam vitae ullam,
+            quia nemo rem eveniet illum in deserunt hic suscipit assumenda officia dolorum
+            <span class="me">ipsa itaque?</span> Omnis dignissimos
+            obcaecati quod, commodi facilis dolorum amet, molestiae harum voluptatibus officia
+            fugit incidunt deleniti. Numquam, nihil?</p>
+
+        <ol id="mainlist">
+            <li>List item 1</li>
+            <li>List item 2
+                <ol>
+                    <li><a href=""> Child list item 1</a></li>
+                    <li>Child list item 2</li>
+                    <li>Child list item 3</li>
+                </ol>
+            </li>
+            <li><a href=""> List item 3</a></li>
+        </ol>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit velit,
+            ratione iusto, aut, explicabo esse quaerat minima dignissimos id asperiores
+            libero! Eum assumenda, ipsum adipisci magni quas nihil perferendis reiciendis
+            nisi exercitationem, impedit fuga esse suscipit labore velit dolorem rem nostrum
+            rerum sunt? Obcaecati aspernatur laudantium recusandae, commodi temporibus modi.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Veniam nam incidunt corporis
+            accusantium commodi repellat ad tempora beatae nisi,
+            enim reiciendis sint sed placeat nihil ducimus nobis
+            aspernatur ab iusto officia eveniet molestias reprehenderit!
+            Dolores facilis alias <a href=""> recusandae in quas eum,</a> blanditiis doloremque
+            odit veniam expedita sunt? Vitae, cupiditate enim?
+        </p>
+
+    </div>
+
+    </div>
+</body>
+
+</html>

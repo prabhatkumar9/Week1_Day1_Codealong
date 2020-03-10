@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        body{
+            margin: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .container{
+            border: 5px solid darkcyan;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .container>div{
+            padding: 10px;
+            text-align: center;
+            font-size: 2em;
+
+        }
+        .container>div:nth-child(1){
+            background-color: darkgray;
+        }
+        .container>div:nth-child(2){
+            background-color: gold;
+        }
+        .container>div:nth-child(3){
+            background-color : orangered;
+        }
+    </style>
+</head>
+<body><div class="container">
+    <div>Home</div>
+    <div>About</div>
+    <div>Services</div></div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            /*grid-template-columns: 1fr 2fr 1fr;*/
+            grid-template-columns: repeat(1, 1fr 2fr 1fr);
+            /*grid-row-gap: 1em;
+            grid-column-gap: 1em;*/
+            grid-gap: 1em;
+            /*grid-template-rows: 50vh 50vh;*/
+            grid-auto-rows: minmax(200px, auto);
+            /*justify-content: end;
+            align-items: end;*/
+        }
+
+        .grid-container>div {
+            padding: 1em;
+            background-color: darkcyan;
+        }
+
+        .grid-container>div:nth-child(even) {
+            background-color: darkgray;
+        }
+
+        .div1 {
+            /*justify-self: center;
+            align-self: center;*/
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            justify-items: center;
+        }
+
+        .div1 div {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="div1">
+            <div>lorem1.1</div>
+            <div>lorem1.2</div>
+            <div>lorem1.3</div>
+            <div>lorem1.4</div>
+        </div>
+        <div>Lorem ipsum dolor sit amet.2</div>
+        <div>Lorem ipsum dolor sit amet.3</div>
+        <div>Lorem ipsum dolor sit amet.4</div>
+        <div>Lorem ipsum dolor sit amet.5</div>
+        <div>Lorem ipsum dolor sit amet.6</div>
+    </div>
+
+</body>
+
+</html>

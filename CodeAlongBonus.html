@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Grid Property and Layouts</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 1fr 1fr; */
+            grid-gap: 10px;
+            /* grid-column-gap: 1em; */
+            /* grid-row-gap: 1em; */
+            /* grid-template-rows: 1fr 2fr 1fr 2fr; */
+            /* grid-template-rows: repeat(3, 1fr 2fr ); */
+            grid-template-columns: repeat(2, 1fr 2fr);
+            /* grid-auto-rows: 50px; */
+            grid-auto-rows: minmax(100px,auto);
+            grid-auto-columns: minmax(100px,auto);
+            /* justify-items: start; */
+            /* justify-items: stretch; */
+            /* align-items: end; */
+            
+        }
+        #div1{
+            justify-self: center;
+            align-self:center ;
+        }
+        .container>div{
+            padding: 1em;
+            background-color: aquamarine;
+
+        }
+        .container>div:nth-child(even){
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="div1">box_1</div>
+        <div>box_2</div>
+        <div>box_3</div>
+        <div>box_4</div>
+        <div>box_5</div>
+    </div>
+</body>
+</html>
